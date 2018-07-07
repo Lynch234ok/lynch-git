@@ -1,0 +1,25 @@
+{
+	"version" : "1.0,2",
+
+	"ptzChannel" : [
+		{
+			"id" : 1,
+			"idProperty" : { "type" : "integer", "mode" : "ro" },
+			"serialPortID" : 2,
+			"serialPortIDProperty" : { "type" : "integer", "mode" : "ro" },
+			"videoInputID" : 1,
+			"videoInputIDProperty" : { "type" : "integer", "mode" : "ro" },
+			"duplexMode" : "half",
+			"duplexModeProperty" : { "type" : "string", "mode" : "ro", "opt" : ["half", "full" ] },
+			"controlType" : "external",
+			"controlTypeProperty" : { "type" : "string", "mode" : "ro", "opt" : ["internal", "external" ] },
+
+			"externalControl" : {
+				"protocol" : "pelco-d",
+				"protocolProperty" : { "type" : "string", "mode" : "rw", "opt" : ["pelco-d", "pelco-p"] },
+				"address" : 1,
+				"addressProperty" : { "type" : "integer", "mode" : "rw" },
+			},
+		},
+	],
+}

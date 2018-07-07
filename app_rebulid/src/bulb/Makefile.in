@@ -1,0 +1,9 @@
+
+SOURCES = $(wildcard ./*.c)
+
+
+INCLUDES = \
+
+
+LIBRARIES = \
+
